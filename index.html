@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The North Face</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="logoS.svg">
+    </head>
+    <body>
+        <div id="main">
+            <img src="img/blue.png" id="prod" alt>
+            <img src="img/logoP.png" id="logoP">
+            <div id="left">
+                <img src="img/logoS.svg" alt>
+                <div id="logoC">
+                    <canvas id="myC" width="400" height="230"></canvas>
+                    <canvas id="myCanvas" width="170" height="230"></canvas>
+                </div>
+                <div id="text">
+                    SNOW QUEST<br>JACKET
+                </div>
+            </div>
+            <div id="right">
+                <div id="price">
+                    149,99€
+                </div>
+                <div class="box">
+                    <div id="colorText">
+                        COLOR
+                    </div>
+                    <div id="bar">
+                        <button id="blue" onclick="changeColorB()"></button>
+                        <button id="pink" onclick="changeColorPi()"></button>
+                        <button id="purple" onclick="changeColorPu()"></button>
+                    </div>
+                    <div id="sizeText">
+                        SIZES
+                    </div>
+                    <div id="sizes">
+                        Available in: S, M, L, XL
+                    </div>
+                    <div id="desc">
+                        DESCRIPTION
+                    </div>
+                    <div id="descT">
+                        Resistant, warm and weatherproof - The North Face
+                        Snow Quest Jacket ensures a good time in the snow! It’s
+                        made of a windproof
+                        and waterproof 2-layer material that’s breathable just
+                        like its synthetic insulation. The material even
+                        provides warmth when wet, is light and prevents heat
+                        accumulation.
+                    </div>
+                </div>
+            </div>
+            <script>
+                var canvas = document.getElementById('myCanvas');
+                var context = canvas.getContext('2d');
+                context.moveTo(0, 0);
+                context.bezierCurveTo(57, 4, 175, 33, 161, 227);
+                context.lineTo(100, 227);
+                context.bezierCurveTo(108, 79, 25, 71, 0, 72);
+                context.lineTo(0, 0);
+
+                context.moveTo(0, 78);
+                context.bezierCurveTo(72, 78, 98, 129, 95, 227);
+                context.lineTo(39, 227);
+                context.bezierCurveTo(39, 169, 40, 147, 0, 150);
+                context.lineTo(0, 78);
+
+                context.moveTo(34, 227);
+                context.lineTo(0, 227);
+                context.lineTo(0, 154);
+                context.bezierCurveTo(28, 152, 37, 157, 35, 227);
+                context.lineWidth = 1;
+
+                context.fillStyle = "#F5F5F555";
+                context.fill();
+                context.strokeStyle = '#F5F5F555';
+                context.stroke();
+
+                var c = document.getElementById("myC");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#F5F5F555";
+                ctx.font = "100px Helvetica";
+                ctx.fillText("THE", 200, 75);
+                ctx.fillText("NORTH", 50, 150);
+                ctx.fillText("FACE", 140, 225);
+            </script>
+
+        </div>
+    </body>
+    <script>
+        function changeColorPi() {
+            var gfg = document.getElementById("left");
+            document.getElementById("prod").src = "img/pink.png";
+        }
+        function changeColorB() {
+            var gfg = document.getElementById("left");
+            document.getElementById("prod").src = "img/blue.png";
+        }
+        function changeColorPu() {
+            var gfg = document.getElementById("left");
+            document.getElementById("prod").src = "img/purple.png";
+        }
+    </script>
+</html>

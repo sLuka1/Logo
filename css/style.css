@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Helvica;
+    src: url("../font/Helvetica-Bold-Font.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+button {
+    border: 0.5px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#main {
+    height: 620px;
+    width: 1050px;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+}
+
+#main #prod {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main #logoP {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 37%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+
+#left {
+    width: 60%;
+    background-color: #025fc3ce;
+}
+
+#left img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#left #logoC {
+    margin-top: 340px;
+    margin-right: 20px;
+}
+
+#left #text {
+    position: absolute;
+    font-size: 45px;
+    font-family: Helvica;
+    top: 30%;
+    left: 20%;
+    color: #d4d1c8c2 ;
+    transform: translate(-50%, -50%);
+}
+
+#right {
+    width: 40%;
+    font-family: Helvica;
+    color: #e7dcbcd5;
+    letter-spacing: 1px;
+    background-color: #025fc3;
+}
+
+#right #price {
+    font-size: 30px;
+    position: absolute;
+    top: 12%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#colorText,
+#sizeText,
+#desc {
+    font-size: 25px;
+}
+
+#colorText {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#bar {
+    width: 200px;
+    height: 8px;
+    display: flex;
+    position: absolute;
+    top: 24%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+}
+
+#blue {
+    background-color: #025fc3;
+    width: 33%;
+    height: 8px;
+}
+
+#pink {
+    background-color: #FD6C99;
+    width: 33%;
+    height: 8px;
+}
+
+#purple {
+    background-color: #984A82;
+    width: 33%;
+    height: 8px;
+}
+
+#sizeText {
+    position: absolute;
+    top: 30%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+
+#sizes {
+    position: absolute;
+    top: 35%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+}
+
+#desc {
+    position: absolute;
+    top: 44%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+}
+
+#descT {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 72%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+}
